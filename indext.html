@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">ShopEasy</div>
+
+        <input type="text" id="search" placeholder="Search products...">
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#">Login</a>
+            <a href="#">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to ShopEasy</h1>
+    <p>Best Electronics & Health Products at Affordable Prices</p>
+    <button onclick="location.href='#products'">Shop Now</button>
+</section>
+
+<!-- Category Filter -->
+<section id="categories" class="category-section">
+    <h2>Categories</h2>
+
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="health">Health & Skincare</option>
+    </select>
+
+    <select id="sortPrice">
+        <option value="default">Sort By Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+    </select>
+</section>
+
+<!-- Products -->
+<section id="products" class="products">
+
+    <div class="product electronics" data-price="45000">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Smartphone</h3>
+        <p>£450</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Smartphone')">Add to Cart</button>
+    </div>
+
+    <div class="product electronics" data-price="70000">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Laptop</h3>
+        <p>£700</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Laptop')">Add to Cart</button>
+    </div>
+
+    <div class="product electronics" data-price="12000">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Headphones</h3>
+        <p>£120</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Headphones')">Add to Cart</button>
+    </div>
+
+    <div class="product electronics" data-price="15000">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Smart Watch</h3>
+        <p>£150</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+    </div>
+
+    <div class="product electronics" data-price="9000">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Bluetooth Speaker</h3>
+        <p>£90</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Speaker')">Add to Cart</button>
+    </div>
+
+    <div class="product health" data-price="500">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Face Wash</h3>
+        <p>£5</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Face Wash')">Add to Cart</button>
+    </div>
+
+    <div class="product health" data-price="900">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Moisturizer</h3>
+        <p>£9</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Moisturizer')">Add to Cart</button>
+    </div>
+
+    <div class="product health" data-price="1200">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Sunscreen</h3>
+        <p>£12</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Sunscreen')">Add to Cart</button>
+    </div>
+
+    <div class="product health" data-price="1500">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Protein Powder</h3>
+        <p>£15</p>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Protein Powder')">Add to Cart</button>
+    </div>
+
+    <div class="product health" data-price="700">
+        <img src="https://via.placeholder.com/180" alt="">
+        <h3>Vitamin Tablets</h3>
+        <p>£7</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Vitamin Tablets')">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ShopEasy | Electronics & Health Store</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
